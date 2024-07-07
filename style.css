@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
+.lakki-reddy-regular {
+  font-family: "Lakki Reddy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+            body {
+                background-image: url('images/bg.png');
+                background-size: cover;
+            }
+            div button {
+                width: 200px;
+                height: 50px;
+                margin-right: 20px;
+                background-color: #8b603c;
+                border-radius: 15px;
+                border: none;
+                font-family: "Lakki Reddy", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 30px;
+                padding-top: 10px;
+                color: white;
+                text-shadow: 0 2px 6px #000;
+            }
