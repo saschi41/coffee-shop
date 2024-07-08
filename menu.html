@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #b3a07e;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            background-color: #7e5e3c;
+            border-radius: 5px;
+        }
+        .navbar a:hover {
+            background-color: #6e4e2c;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            background-image: url('background.jpg'); /* Add your background image here */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .menu {
+            flex: 2;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 20px;
+            position: relative;
+
+          
+         
+        }   
+        .menu h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            border-radius: 15px;
+            padding: 15px 30px;
+            font-size: 40px;
+       
+        }
+        .menu h2:first-of-type {
+            margin-top: 0;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .menu-item input {
+            margin-right: 10px;
+        }
+        .menu-item label {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-item h3 {
+            margin: 100;
+            display: inline-block;
+            font-size: 26px;
+        }
+        .menu-item .price {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .promo h2 {
+            font-size: 24px;
+        }
+        .promo img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .Coffee {
+            position: absolute;
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
+        .menu-item-tea {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        input[type="checkbox"] {
+                    width: 20px; /* Adjust the width */
+                    height: 20px; /* Adjust the height */
+                    transform: scale(1.5); /* Adjust the scale factor */
+                    -webkit-transform: scale(1.5); /* For Safari */
+                    -moz-transform: scale(1.5); /* For Firefox */
+                    -ms-transform: scale(1.5); /* For IE */
+                    -o-transform: scale(1.5); /* For Opera */
+                }
+
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Directions</a>
+    </div>
+    
+    <div class="container">
+        <div class="menu">
+            <h2>Refreshers</h2>
+            <div class="menu-item">
+                <input type="checkbox" id="item1">
+                <label for="item1"><h3>Classic Lemonade <span class="price">₹181</span></h3></label>
+            </div>
+            <h2>Chocolate Bliss</h2>
+            <div class="menu-item">
+                <input type="checkbox" id="item2">
+                <label for="item2"><h3>Gourmet Belgian Cold Chocolate <span class="price">₹233</span></h3></label>
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="item3">
+                <label for="item3"><h3>Gourmet Belgian Hot Chocolate <span class="price">₹200</span></h3></label>
+            </div>
+
+            <div class="Coffee">
+                <img src="images/coffee1.png" alt="New JEMB Menu" width="300" height="500">
+            </div>
+
+
+
+                <h2>Tea</h2>
+
+            <div class="menu-item-tea">
+                <input type="checkbox" id="item4">
+            
+
+
+                <label for="item4"><h3>Ice Chai Latte <span class="price">₹148</span></h3></label>
+            </div>
+            <div class="menu-item-tea">
+                <input type="checkbox" id="item5">
+                <label for="item5"><h3>Hot Chai Latte <span class="price">₹138</span></h3></label>
+            </div>
+            <div class="menu-item-tea">
+                <input type="checkbox" id="item6">
+                <label for="item6"><h3>Home-style Ginger Tea <span class="price">₹133</span></h3></label>
+            </div>
+            <div class="menu-item-tea">
+                <input type="checkbox" id="item7">
+                <label for="item7"><h3>Home-style Cardamom Tea <span class="price">₹133</span></h3></label>
+            </div>
+            <div class="menu-item-tea">
+                <input type="checkbox" id="item8">
+                <label for="item8"><h3>Green Tea <span class="price">₹133</span></h3></label>
+            </div>
+            <div class="menu-item-tea">
+                <input type="checkbox" id="item9">
+                <label for="item9"><h3>Assam Tea <span class="price">₹133</span></h3></label>
+            </div>
+        </div>
+
+
+        <div class="promo">
+            <img src="images/OMG.png" alt="New JEMB Menu" width="650" height="1200">
+        </div>
+    </div>
+</body>
+</html>
